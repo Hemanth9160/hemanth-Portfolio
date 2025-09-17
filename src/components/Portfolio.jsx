@@ -51,14 +51,6 @@ export default function Portfolio() {
       github: "https://github.com/Hemanth9160/hemanth-Portfolio",
       demo: "#",
     },
-    {
-      title: "Fitness Tracker App",
-      description:
-        "Mobile-friendly fitness tracking web app with charts and user analytics.",
-      techStack: ["React", "Chart.js", "Express", "MongoDB"],
-      github: "#",
-      demo: "#",
-    },
   ]
 
   const experiences = [
