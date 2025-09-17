@@ -15,8 +15,6 @@ import {
   CardActions,
   Chip,
   LinearProgress,
-  Snackbar,
-  Alert,
   List,
   ListItem,
   ListItemText,
@@ -43,7 +41,6 @@ import profilePic from "./images/profile.JPG"
 
 export default function Portfolio() {
   const [darkMode, setDarkMode] = useState(false)
-  const [contactOpen, setContactOpen] = useState(false)
 
   const projects = [
     {
@@ -51,7 +48,7 @@ export default function Portfolio() {
       description:
         "This application is a portfolio website for my personal projects",
       techStack: ["React", "Material-UI"],
-      github: "#",
+      github: "https://github.com/Hemanth9160/hemanth-Portfolio",
       demo: "#",
     },
     {
@@ -59,14 +56,6 @@ export default function Portfolio() {
       description:
         "Mobile-friendly fitness tracking web app with charts and user analytics.",
       techStack: ["React", "Chart.js", "Express", "MongoDB"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "Cryptocurrency Portfolio",
-      description:
-        "Track and analyze cryptocurrency investments with real-time price updates.",
-      techStack: ["React", "Redux", "CoinGecko API", "TailwindCSS"],
       github: "#",
       demo: "#",
     },
@@ -113,14 +102,6 @@ export default function Portfolio() {
     "UI/UX Enthusiast",
     "Open Source Contributor",
   ])
-
-  const handleContactSend = () => {
-    setContactOpen(true)
-  }
-
-  const handleContactClose = () => {
-    setContactOpen(false)
-  }
 
   return (
     <ThemeProvider theme={theme}>
